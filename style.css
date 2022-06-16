@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+header {
+    background-image: url("images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+}
+.nav .logo {
+    width: 75%;
+}
+
+.nav .try-button {
+    width: 15%;
+}
+
+.try-button button {
+    width: 180px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 35px;
+    background-color: white;
+    padding: 10px 25px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.banner {
+    display: flex;
+    padding: 30px 20px;
+}
+
+.banner .banner-left {
+    width: 35%;
+    padding: 20px 60px 50px;
+}
+
+.banner .banner-left h1{
+   margin: 5px 0 25px;
+}
+
+.banner .banner-left button{
+    width: 230px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    border-radius: 35px;
+    background-color: hsl(322, 100%, 66%);
+    padding: 10px 25px;
+    margin: 27px 0;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ }
+
+.banner .banner-right {
+    width: 65%;
+}
+
+.banner .banner-right img {
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.card {
+    display: flex;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    
+}
+
+.card .text {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+
+.card .text h2,p {
+    width: 80%;
+    
+}
+
+.card .image {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    
+}
+
+.card .image img{
+    width: 70%;
+    margin: auto;
+}
+
+
+/* Footer */
+footer {
+    background-color: hsl(192, 100%, 9%);
+    padding: 150px 100px 100px;
+    color: hsl(208, 11%, 55%);
+
+}
+
+footer .logo {
+    padding: 0 0 30px;
+}
+
+.container-footer {
+    display: flex;
+}
+
+.container-footer  .column.contact{
+    width: 40%;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.container-footer  .column {
+    width: 20%;
+    color: hsl(208, 11%, 55%);
+}
+
+.contact img {
+    margin: 0 15px;
+    display: inline;
+    padding-top: 5px;
+}
+
+.column.link p {
+    margin: 0 0 15px;
+}
+
+.column.socials i {
+    width: 13px;
+    height: 13px;
+    padding: 8px;
+    margin: 0 5px;
+    border: 1px solid  hsl(208, 11%, 55%);
+    border-radius: 50px;
+}
+
+footer .footer-note {
+    float: right;
+    margin-top: 5px;
+}
+
+/* Hanging Card */
+
+.hanging-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    margin: 70px auto -135px;
+    padding: 40px 20px 30px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.hanging-card button{
+    width: 55%;
+    height: 50px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    border-radius: 35px;
+    background-color: hsl(322, 100%, 66%);
+    padding: 10px 25px;
+    margin: 27px 0;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav .logo img{
+        width: 50%;
+    }
+    
+    .nav .try-button button{
+        width: 100%;
+        padding: 6px 10px;
+    }
+    .nav .try-button {
+        float: right;
+        width: 30%;
+    }
+    .banner {
+        display: flex;
+        padding: 20px 10px;
+        flex-wrap: wrap;
+    }
+
+    .banner .banner-left {
+        width: 100%;
+        padding: 20px 20px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .banner .banner-right {
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .card-container {
+        padding: 30px 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .card.card-grow, .card.card-users {
+        flex-direction: column-reverse;
+    }
+    .card.card-flow {
+        flex-direction: column;
+    }
+    .card .text {
+        width: 90%;
+        padding: 15px;
+        
+    }
+    .card .image {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .card .text h2,p {
+        margin: auto;
+        text-align: center;
+        
+    }
+    .hanging-card {
+        width: 91%;
+        text-align: center;
+        padding: 15px 8px 10px;
+        margin: 50px auto -75px;
+    }
+    .hanging-card h2{
+        font-size: 1.2rem;
+    }
+    .hanging-card button{
+        padding: 2px 15px;
+        margin: 10px 0;
+        height: 35px;
+    }
+    footer {
+        padding: 72px 10px 45px;
+    }
+    .container-footer {
+        flex-direction: column;
+    }
+    .container-footer .column{
+        width: 100%;
+    }
+    .container-footer .column p{
+        text-align: left;
+        margin-left: 10px;
+    }
+    .container-footer  .column.contact{
+        width: 100%;
+        row-gap: 10px;
+        margin-bottom: 15px;
+    }
+    .column.socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer-note {
+        text-align: center;
+        float: none;
+        margin-top: 5px;
+    }
+}
